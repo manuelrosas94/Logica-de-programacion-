@@ -1,0 +1,35 @@
+<meta charset= "UTF-8">  
+<h1>PROGRAMA</h1>
+
+<script>
+
+    function saltarlinea() {   // las funciones se usan para llamar a un comando para no repetirlo muchas veces en el codigo
+
+       document.write("<br>");
+       document.write("<br>");
+       document.write('<br>');
+    }
+
+    function imprimir(frase){  //las funciones pueden tener otras funciones dentro 
+
+    document.write(frase);
+    saltarlinea();
+    }
+
+	 var anho=2022;
+
+	 imprimir("Hola amigos");  // se escribe la funcion creada y asi ahorrar lineas de codigo
+
+	 // Este codigo calcula las edades de Juan, Pedro y Carlos
+
+    imprimir("Juan tiene:" + (anho-2000)+ "años");
+
+    imprimir("Pedro tiene:" + (anho-1995)+ "años");
+
+    anho=2035;
+
+    imprimir("Carlos tiene:" + (anho-2005)+ "años")
+
+
+</script>
+

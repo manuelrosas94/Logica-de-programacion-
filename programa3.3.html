@@ -1,0 +1,35 @@
+<canvas width="600" height="400"></canvas> <!--width y height para declarar el ancho y altura de la pizarra-->
+
+<script>
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+
+	pincel.fillStyle = "grey";
+	pincel.fillRect(0,0,600,400);
+
+	function exhibirAlerta(evento){
+
+		var x = evento.pageX - pantalla.offsetLeft;//pageX para obtener las coordenadas del canvas
+		var y = evento.pageY - pantalla.offsetTop;//offset para el restante de la pantalla que esta fuera del canvas
+
+		console.log(evento);
+		alert(x + " , " + y);
+
+	}
+
+	function dibujarCirculo(evento){
+		var x = evento.pageX - pantalla.offsetLeft;
+		var y = evento.pageY - pantalla.offsetTop;
+
+		pincel.fillStyle = "red";
+		pincel.beginPath();
+		pincel.arc(x,y,10,0,2*3.14);//los parametros de arc son x,y coordenadas radio, angulo inicial y angulo final 2*pi
+		pincel.fill();
+		console.log(x + " , " + y);
+
+    }
+
+    //pantalla.onclick = exhibirAlerta;
+    pantalla.onclick = dibujarCirculo;
+
+</script>

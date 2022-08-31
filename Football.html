@@ -1,0 +1,45 @@
+<meta charset= "UTF-8">  
+<h1>Calcular puntuacion de un equipo de football</h1>
+
+<script>
+
+    function saltarlinea() {   // las funciones se usan para llamar a un comando para no repetirlo muchas veces en el codigo
+
+       document.write("<br>");
+       document.write("<br>");
+       document.write('<br>');
+    }
+
+    function imprimir(frase){  //las funciones pueden tener otras funciones dentro 
+
+    document.write(frase);
+    saltarlinea();
+    }
+
+    var victorias = parseInt(prompt(" Ingresar la cantidad de victorias ")); //parseInt es para convertir el string a numero
+    var empates = parseInt(prompt(" Ingresar la cantidad de empates ")); // prompt se usa para ingresar texto desde el navegador
+
+    var puntosTotal = victorias*3 + empates;
+
+    imprimir(" El total de puntos del equipo es: " +  puntosTotal);
+    
+
+    if (puntosTotal> 28 ){
+
+         imprimir(" El equipo esta mejor que le año pasado");
+      
+   }
+
+    if (puntosTotal< 28){
+
+          imprimir(" El equipo esta peor que le año pasado");
+    
+    }
+
+    if (puntosTotal== 28){
+
+         imprimir(" El equipo esta igual que le año pasado");
+    
+    }
+</script>
+

@@ -1,0 +1,69 @@
+<meta charset= "UTF-8">  
+<h1>Juego de adivinacion</h1>
+
+<script>
+
+    function saltarlinea() {   // las funciones se usan para llamar a un comando para no repetirlo muchas veces en el codigo
+
+       document.write("<br>");
+       document.write("<br>");
+       document.write('<br>');
+    }
+
+    function imprimir(frase){  //las funciones pueden tener otras funciones dentro 
+
+    document.write(frase);
+    saltarlinea();
+    }
+
+    var numeroPensado = Math.round(Math.random()*10);//Math.round es para redondear un numero y Math.random es para generar un numero aleatorio y el *10 es para pasar de decimales a enteros
+    var intentos = 3;
+    var contador = 1;
+    
+
+    while(contador <= intentos){
+
+         var numeroLanzado = parseInt(prompt(
+         " Ingresar un numero entre 0 y 10"));
+    
+
+         if(numeroPensado == numeroLanzado){
+            alert(" Usted acerto, en el intento " + contador + " el numero pensado era " + numeroPensado);
+            break;
+
+            }
+
+        else{
+
+        //if(numeroPensado != numeroLanzado){
+              alert(" Usted fallo ");
+
+        }
+
+          //}
+
+        contador++;
+
+    }
+
+
+     if(numeroPensado == numeroLanzado){
+       imprimir(" Usted acerto, en el intento " + contador + " el numero pensado era " + numeroPensado);
+                
+
+    }
+
+    else{
+
+        //if(numeroPensado != numeroLanzado){
+            imprimir(" Usted fallo, el numero pensado era " + numeroPensado);
+
+    }
+
+
+imprimir(" FIN ");
+
+
+
+</script>
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El secreto</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+      
+    <body>
+       <h1 class="titulo"> Código secreto</h1></h1>
+       
+
+        <main class = "formularios">
+          <section class="encriptar">
+             
+                <label for="input-texto">Solo letras minúsculas, sin acento</label>
+                <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+                <button class="btn" onclick="encriptar()">Encriptar</button>
+                <button class="btn" onclick="desencriptar()">Desencriptar</button>
+             
+              
+          </section>
+
+          <section class = "desencriptar">
+
+        
+            <label for="input-texto">Mensaje encriptado:</label>
+
+            <input class="text-input" type="text" name="out" id="output" placeholder="Ingrese el texto aqui">
+            <button class="btn" onclick="copy()">Copiar</button>
+
+          </section>
+      </main> 
+
+      <section class="footer">
+        <footer class=" derechos">
+            
+          <label> Todos los derechos reservados | © 2022 Daniel Miramontes </label>
+
+        </footer>
+
+      </section>
+
+      <script src="script.js"></script>
+
+   
+    </body>
+
+
+</html>

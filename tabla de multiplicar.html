@@ -1,0 +1,43 @@
+<meta charset= "UTF-8">  
+<h1>Calcular tabla de multiplicar</h1>
+
+<script>
+
+    function saltarlinea() {   // las funciones se usan para llamar a un comando para no repetirlo muchas veces en el codigo
+
+       document.write("<br>");
+       document.write("<br>");
+       document.write('<br>');
+    }
+
+    function imprimir(frase){  //las funciones pueden tener otras funciones dentro 
+
+    document.write(frase);
+    saltarlinea();
+    }
+
+
+    var multiplicador = 1;
+
+    imprimir(" WHILE ");
+    while(multiplicador <=10){
+         
+         imprimir(5*multiplicador);
+         multiplicador = multiplicador + 1;
+         //al entrar en un ciclo while hay que agregar un contador para que la funcion no se quede en un ciclo infinito
+
+    }
+
+    imprimir(" FOR ");
+
+    for(var multiplicador = 1;multiplicador <=10;multiplicador = multiplicador + 1){
+
+        imprimir(5 * multiplicador);
+
+    }
+
+    // la funcion for se compone de 3 partes, la variable, la concdicion y el incremento(se puede usar contador++)
+
+
+</script>
+

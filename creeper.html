@@ -1,0 +1,22 @@
+<canvas width="600" height="400"></canvas> <!--width y height para declarar el ancho y altura de la pizarra-->
+
+<script>
+
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");//getContext para adquirir lo que este en la pantalla
+
+	pincel.fillStyle = "gray";
+	pincel.fillRect(0,0,600,400);//se define las coordenadas del grafico
+
+	pincel.fillStyle = "darkgreen"; //fillStyle es una propiedad
+	pincel.fillRect(100,50,350,300); //derecha, izquierda, ancho, alto
+
+	pincel.fillStyle = "black";
+	pincel.fillRect(150,110,90,90);//ojo
+	pincel.fillRect(310,110,90,90);//ojo
+	pincel.fillRect(240,200,70,100);//nariz
+	pincel.fillRect(200,240,40,110);//boca
+	pincel.fillRect(310,240,40,110);//boca
+
+
+</script>
